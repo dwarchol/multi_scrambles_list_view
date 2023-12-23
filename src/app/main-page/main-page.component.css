@@ -5,7 +5,7 @@ border: 3px  solid red;
 .scramble-area {
     margin: 20px;
     height: 80px;
-    width: 350px;
+    width: 500px;
     white-space: pre-line;
-    background-color: aliceblue;
+    background-color: beige;
 }
