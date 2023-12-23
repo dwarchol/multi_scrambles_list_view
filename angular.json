@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "scrambles_viewer": {
+    "multi_scrambles_list_view": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/scrambles_viewer",
+            "outputPath": "dist/multi_scrambles_list_view",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "scrambles_viewer:build:production"
+              "browserTarget": "multi_scrambles_list_view:build:production"
             },
             "development": {
-              "browserTarget": "scrambles_viewer:build:development"
+              "browserTarget": "multi_scrambles_list_view:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "scrambles_viewer:build"
+            "browserTarget": "multi_scrambles_list_view:build"
           }
         },
         "test": {

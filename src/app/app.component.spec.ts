@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'scrambles_viewer'`, () => {
+  it(`should have as title 'multi_scrambles_list_view'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('scrambles_viewer');
+    expect(app.title).toEqual('multi_scrambles_list_view');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('scrambles_viewer app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('multi_scrambles_list_view app is running!');
   });
 });

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'scrambles_viewer';
+  title = 'multi_scrambles_list_view';
 }

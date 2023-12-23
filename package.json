@@ -1,5 +1,5 @@
 {
-  "name": "scrambles-viewer",
+  "name": "multi-scrambles-list-view",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
