@@ -12,11 +12,13 @@ export class USideComponent {
   cube = new Cube();
   sp_scramble = [""];
   ngOnInit(){
-    //this.cube.state.U.center = this.scramble;
     this.sp_scramble = this.scramble.replaceAll("'", "p").split(" ");
     this.sp_scramble.shift();
     console.log(this.sp_scramble)
-    this.cube.moveR();
+
+    this.sp_scramble.forEach(move => {
+      this.cube.move(move);
+    });
 
   }
 }
