@@ -1,0 +1,8 @@
+
+<textarea class="scramble-area" name="scrambles" #textArea>
+</textarea>
+<button (click)="getData(textArea.value)">
+    Get Scramble
+</button>
+<app-scrambles-list [scrambles]="moves">
+</app-scrambles-list>

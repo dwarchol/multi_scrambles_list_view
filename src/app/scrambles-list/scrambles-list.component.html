@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <th>
+            Scramble
+        </th>
+        <th>
+            Top side
+        </th>
+    </tr>
+    <tr *ngFor="let item of scrambles">
+        <td class="left-side">
+            {{item}}
+        </td>
+        <td class="right-side">
+            <app-u-side [scramble] = 'item'></app-u-side>
+        </td>
+    </tr>
+</table>

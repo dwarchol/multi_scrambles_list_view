@@ -1,0 +1,28 @@
+.row {
+    display: flex;
+    flex-direction:row;
+}
+.tile {
+    height: 20px;
+    width: 20px;
+    margin: 1px;
+    border: solid 1px black;
+}
+.w {
+    background-color: #ffffff;
+}
+.y {
+    background-color: yellow;
+}
+.g {
+    background-color: green;
+}
+.b {
+    background-color: blue;
+}
+.o {
+    background-color: orange;
+}
+.r {
+    background-color: red;
+}
