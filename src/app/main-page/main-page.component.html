@@ -1,7 +1,7 @@
 
-<textarea class="scramble-area" name="scrambles" #textArea>
+<textarea class="scramble-area noprint" name="scrambles" #textArea>
 </textarea>
-<button (click)="getData(textArea.value)">
+<button (click)="getData(textArea.value)" class="noprint">
     Get Scramble
 </button>
 <app-scrambles-list [scrambles]="moves">

@@ -1,13 +1,15 @@
 <table>
     <tr>
-        <th>
+        <th class="left-side">
             Scramble
         </th>
-        <th>
+        <th class="right-side">
             Top side
         </th>
     </tr>
-    <tr *ngFor="let item of scrambles">
+</table>
+<table class="cube"  *ngFor="let item of scrambles" >
+    <tr>
         <td class="left-side">
             {{item}}
         </td>

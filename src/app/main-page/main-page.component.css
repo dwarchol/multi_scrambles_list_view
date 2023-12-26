@@ -9,3 +9,9 @@ border: 3px  solid red;
     white-space: pre-line;
     background-color: beige;
 }
+
+@media print {
+    .noprint {
+       visibility: hidden;
+    }
+ }
