@@ -10,8 +10,15 @@ border: 3px  solid red;
     background-color: beige;
 }
 
+.set-title-area {
+    margin: 20px;
+    height: 40px;
+    width: 500px;
+    white-space: pre-line;
+    background-color: beige;
+}
 @media print {
-    .noprint {
-       visibility: hidden;
+    #header, .noprint {
+        display: none;
     }
  }

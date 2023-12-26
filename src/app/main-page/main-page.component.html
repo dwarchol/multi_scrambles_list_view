@@ -1,8 +1,21 @@
 
-<textarea class="scramble-area noprint" name="scrambles" #textArea>
-</textarea>
-<button (click)="getData(textArea.value)" class="noprint">
-    Get Scramble
-</button>
-<app-scrambles-list [scrambles]="moves">
+<div class="noprint" style="margin-left: 20px;">
+    <p style="margin-bottom: 0;">Scramble set title:</p>
+    <textarea class="set-title-area " name="set_title" #set_title></textarea>
+    <p style="margin-bottom: 0;">List of scrambles:</p>
+    <textarea class="scramble-area " name="scrambles" #textArea></textarea>
+    <p style="margin-bottom: 0;">Number of cubes in set:</p>
+    
+    <input style="margin-left: 20px;" type="number" value="7" id="table_size" name="table_size" min="1" max="10" #table_size/>
+    <br/>
+    <br/>
+    <button (click)="getData(textArea.value, table_size.value, set_title.value)" class="noprint">
+        Draw scramble
+    </button>
+    <br/>
+    <br/>
+    <br/>
+</div>
+<h4 style=" text-align: center; margin-top: 0; font-weight: normal;">{{set_title_value}}</h4>
+<app-scrambles-list [scrambles]="moves" [table_size]="table_size_value">
 </app-scrambles-list>

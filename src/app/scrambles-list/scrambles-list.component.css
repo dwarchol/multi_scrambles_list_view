@@ -9,7 +9,7 @@ table, td, th {
     width: 70px;
     padding: 10px;
 }
-table.cube
+div.dont_break
 {
   page-break-inside: avoid;
 }

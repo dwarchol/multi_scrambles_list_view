@@ -351,6 +351,9 @@ export class Cube {
 
     move(m: string) {
         switch (m) {
+            case '': {
+                break;
+            }
             case 'U': {
                 this.moveU();
                 break;

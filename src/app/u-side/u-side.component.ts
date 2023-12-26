@@ -14,7 +14,6 @@ export class USideComponent {
   ngOnInit(){
     this.sp_scramble = this.scramble.replaceAll("'", "p").split(" ");
     this.sp_scramble.shift();
-    console.log(this.sp_scramble)
 
     this.sp_scramble.forEach(move => {
       this.cube.move(move);
